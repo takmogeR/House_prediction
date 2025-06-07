@@ -1,0 +1,14 @@
+<html>
+<head>
+<title>House Price Prediction</title>
+</head>
+<body>
+<h2>Predict House Price</h2>
+<form action="/predict" method="post">
+    <label for="sqft">Enter Square Footage</label>
+    <input type="text" id="sqft" name="sqft" required>
+    <input type="submit" value="Predict">
+</form>
+<h3>{{ prediction_text }}</h3>
+</body>
+</html>
